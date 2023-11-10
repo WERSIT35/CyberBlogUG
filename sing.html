@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="container a-container no-hidden" id="a-container">
+                <form class="form" id="a-form" method="" action="">
+                    <h2 class="form_title title">Sign in to Website</h2>
+                    <span class="form__span">misasalmebeli text rame</span>
+                    <!-- <input class="form__input" type="text" placeholder="Name" /> -->
+                    <input class="form__input" type="text" placeholder="Email" /><input
+                        class="form__input"
+                        type="password"
+                        placeholder="Password"/>
+                    <a href="#" class="form__link">Forgot your password?</a>
+                    <a href="signedin.html" class="form__button button submit ">SING IN</a>
+                    <p class="text"> I dont have an accaunt </p>
+                    <a href="#" class="abutton" onclick="changeClass1()">Create Account</a>
+                    <!-- <button onclick="changeClass1()" class=" ">SIGN UP</button> -->
+                </form>
+            </div>
+            <div class="container b-container is-hidden" id="b-container">
+                <form class="form" id="b-form" method="" action="">
+                    <h2 class="form_title title">Create Account</h2>
+                    <span class="form__span">Please don't use personal infromation</span>
+                    <input class="form__input" type="text" placeholder="Name" />
+                    <input class="form__input" type="text" placeholder="Email" />
+                    <input class="form__input" type="password" placeholder="Password" />
+                    <a href="signedin.html" class="form__button button submit">SIGN UP</a>
+                    <p  class="text"> I have an account </p>
+                    <a href="#"  class="abutton" onclick="changeClass2()">Use existing account</a>
+                    <!-- <button onclick="changeClass2()" class="">SIGN IN</button> -->
+                </form>
+
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

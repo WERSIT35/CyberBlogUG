@@ -1,0 +1,225 @@
+:root{
+    --colorred:#161616;
+    --colordarker:#0c0c0c;
+    --colorDarkRed:#054211;
+    --colorCream:#11a82f;
+    --colorGrey:#F1f1f1;
+    --colorBack:#232323;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+body{
+    background-color: var(--colorBack);
+}
+header{
+    background-color: var(--colorred);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.items li{
+    list-style: none;
+}
+.items a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 5px;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(--colorCream);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.items a:hover{
+    /* background-color: var(--colorCream); */
+    color: var(--colorred);
+}
+.regi i{
+    padding: 5px;
+    font-size: 20px;
+    color: var(--colorCream);
+    transition: 0.5s;
+}
+.regi i{
+    font-size: 1.7rem;
+    padding: 10px;
+    color: var(--colorCream);
+    transition: 0.5s;
+}
+.regi i:hover{
+    color: var(--colorDarkRed);
+}
+main{
+    margin: 50px 0px;
+}
+main div{
+    height: 500px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.logo a
+{
+    font-size: 50px;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #175e15 0%,
+    #175e17 10%,
+    #1e611c 20%,
+    #2e7e2d 30%,
+    #66c04b 40%,
+    #76bc7f 50%,
+    #77cc7a 60%,
+    #67b64f 70%,
+    #2e7e2d 80%,
+    #1e611c 90%,
+    #175e15 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @keyframes animator{
+      0%{
+          opacity: 0;
+          transform: translateX(10%);
+      }100%{
+          opacity: 1;
+          transform: translateX(0%);
+      }
+  }
+
+/*nav hover*/
+  .navi ul li a{
+    position:1ative;
+    text-decoration:none;
+    transition:0.5s;
+  }
+  
+  .navi ul:hover li a{
+    transform:scale(1);
+    opacity:80%;
+
+  }
+  
+  .navi ul li a:hover{
+    transform:scale(1.2);
+    opacity:1;
+    text-decoration:none;
+    color:var(--colordarker);
+  }
+  
+  .navi ul li a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:var(--colorCream);
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1;
+  }
+  
+  .navi li a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+  }
+
+  .submenu{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top:35px;
+    visibility: hidden;
+    z-index: 1;
+  }
+/* Add this code to make the submenu appear when hovering over Categories */
+.items .list {
+    position: relative; /* Add this to create a context for absolute positioning */
+}
+
+/* Style for the submenu */
+.submenu {
+    position: absolute;
+    top: 100%; /* Position it below the parent list item */
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: all 0.3s; /* Add a transition for a smooth appearance */
+    transform: translateX(-20px);
+}
+
+.items .list:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    filter: none;
+    opacity: 100%;
+}
+
+.submenu{
+    background-color: var(--colordarker);
+    color: var(--colorCream);
+}
+footer{
+    background-color: var(--colorred);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content h2{
+    letter-spacing: 1px;
+    color: var(--colorCream);
+}
+.content{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content div{
+    padding: 15px;
+}
+.content li{
+    list-style: none;
+}
+.content a,p{
+    color: rgb(192, 192, 192);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
