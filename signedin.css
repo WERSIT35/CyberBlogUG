@@ -5,7 +5,7 @@
     --colorText:#11a82f;
     --colorBackground:#232323;
     --postColor:#363636;
-    --paragraph:white;
+    --paragraph:#D8E9A8;
     --postColorHover:#515151;
     --tagColor:#c6c6c6;
     --shadowColor:black;
@@ -50,6 +50,12 @@ header{
 .items a:hover{
     /* background-color: var(--colorText); */
     color: var(--colorMain);
+}
+h3,p{
+    color: var(--paragraph);
+}
+.regi{
+    padding: 5px;
 }
 .regi i{
     padding: 5px;
@@ -236,7 +242,6 @@ main div{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .art{
@@ -412,4 +417,189 @@ h2,h3{
 .profile{
     width: 50px;
     border-radius: 50%;
+    padding: 2px;
+    border:3px solid var(--colorText);
+}
+
+.create-post{
+    background-color: var(--postColor);
+    width: calc(100vw/2.5);
+    height: 200px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 10px var(--shadowColor));
+}
+.create-post h1{
+    color: var(--paragraph);
+    padding: 5px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: center;
+}
+.posttext{
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.posttext input:nth-of-type(1)::placeholder{
+    padding: 5px 10px;
+    color:var(--paragraph);
+}
+.posttext input:nth-of-type(1){
+    width: 100%;
+    background-color:#212121;
+    color: white;
+    font-size: 20px;
+    border-style: none;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.posttext input:nth-of-type(2){
+    width: 30%;
+    border-style: none;
+    background-color: var(--paragraph);
+    color: var(--postColor);
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+.posttext input:nth-of-type(2):hover{
+    background-color: var(--postColorHover);
+    font-weight: 100;
+    color: var(--paragraph);
+}
+.posttext textarea{
+    width: 100%;
+    resize: none;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color:#212121;
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+}
+
+.posttext textarea::placeholder{
+    padding: 5px 10px;
+    color:var(--paragraph);
+}
+.notification{
+    transform: translateX(150px);
+}
+.notification button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorText);
+    background-color: var(--colorBackground);
+    cursor: pointer;
+}
+.leftSide,.rightSide{
+    width: calc(100vw/4);
+    color: var(--colorText);
+    padding: 5px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    background-color: var(--postColor);
+    filter: drop-shadow(0px 0px 10px var(--shadowColor));
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+}
+.leftSide{
+    left: 2%;
+}
+.rightSide{
+    right: 2%;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.container1 a{
+    color: #D8E9A8;
+    text-decoration: none;
+    background-color: var(--postColorHover);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    transition: 0.2s;
+}
+.container1 a:hover{
+    background-color: var(--paragraph);
+    color: var(--postColor);
+}
+.container2 a:hover{
+    background-color: var(--paragraph);
+    color: var(--postColor);
+}
+.container2 a{
+    color: #D8E9A8;
+    text-decoration: none;
+    background-color: var(--postColorHover);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    transition: 0.2s;
+}
+.container2{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+
+.sponsored h2{
+    padding: 10px;
+    color: var(--paragraph);
+}
+.sponsored img{
+    width: 180px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.sp1{
+    display: flex;
+    /* height: 200px; */
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+.sptext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sp1 h3, p{
+    padding: 5px;
+}
+.sp2{
+    display: flex;
+    /* height: 200px; */
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+.sptext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sp2 h3, p{
+    padding: 5px;
 }
