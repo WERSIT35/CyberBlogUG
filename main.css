@@ -5,7 +5,7 @@
     --colorText:#11a82f;
     --colorBackground:#232323;
     --postColor:#363636;
-    --paragraph:white;
+    --paragraph:#D8E9A8;
     --postColorHover:#515151;
     --tagColor:#c6c6c6;
     --shadowColor:black;
@@ -147,7 +147,7 @@ body {
     font-size: 34px;
     font-weight: 700;
     line-height: 3;
-    color: white;
+    color: var(--paragraph);
     letter-spacing: 2px;
 }
 .description {
@@ -165,7 +165,7 @@ body {
     font-size: 14px;
     letter-spacing: 1.15px;
     background-color: black;
-    color: white;
+    color: var(--paragraph);
     border: none;
     outline: none;
     transition: 0.3s;
