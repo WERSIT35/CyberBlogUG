@@ -5,7 +5,7 @@
     --colorText:#11a82f;
     --colorBackground:#232323;
     --postColor:#363636;
-    --paragraph:white;
+    --paragraph:#D8E9A8;
     --postColorHover:#515151;
     --tagColor:#c6c6c6;
     --shadowColor:black;
@@ -426,6 +426,12 @@ h2,h3{
 .latest h2{
     color: var(--colorText);
     letter-spacing: 2px;
+}
+.content a{
+    color: var(--paragraph);
+}
+footer p{
+    color: var(--paragraph);
 }
 
 @media (max-width: 768px) {}
