@@ -530,7 +530,7 @@ footer p{
     }
 }
 
-@media (min-width:486px) and (max-width:769px){
+@media(max-width:769px){
     .logo{
         display: none;
     }
