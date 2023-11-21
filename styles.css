@@ -579,7 +579,7 @@ footer p{
     }
     .carousel{
         flex-direction: column;
-        margin-top: 350px;
+        margin-top: 280px;
     }
     .post{
         width: 65%;
@@ -605,11 +605,16 @@ footer p{
         margin-left: 130px;
     }
     footer{
-        margin-top: 370px;
+        margin-top: 350px;
 
     }
     .bann{
         width: 90%;
+        height: 50%;
+    }
+    .bann1{
+        width: 90%;
+        height: 50%;
     }
     .bann1{
         width: 90%;
