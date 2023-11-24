@@ -1,14 +1,14 @@
 :root{
-    --colorMain:#161616;
-    --colordarkText:#0c0c0c;
-    --colorDarkMainColor:#054211;
-    --colorText:#11a82f;
-    --colorBackground:#232323;
-    --postColor:#363636;
-    --paragraph:#D8E9A8;
-    --postColorHover:#515151;
-    --tagColor:#c6c6c6;
-    --shadowColor:black;
+  --colorMain:#161616;
+  --colordarkText:#0c0c0c;
+  --colorDarkMainColor:#054211;
+  --colorText:#11a82f;
+  --colorBackground:#232323;
+  --postColor:#363636;
+  --paragraph:#4E9F3D;
+  --postColorHover:#515151;
+  --tagColor:#c6c6c6;
+  --shadowColor:black;
 }
 *{
     margin: 0;
@@ -48,6 +48,9 @@ header{
 }
 .items li{
   list-style: none;
+}
+.items i{
+  font-size: 1.5rem;
 }
 .items a{
   display: flex;
@@ -287,8 +290,12 @@ display: inline-block;
     text-decoration: none;
   }
 
-  .name{
+  .name,.phone,.E-mail{
     color:var(--colorText);
+    background-color: var(--colorBackground);
+    border-radius: 5px;
+    padding-left: 10px;  
+    box-shadow: 2px 2px 0px black;  
   }
 
   .properties{
@@ -318,63 +325,108 @@ display: inline-block;
   color: var(--colordarkText);
   filter: drop-shadow(0px 0px 5px var(--tagColor));
 }
-.post{
-  width: 50vw;
-  background-color: var(--postColor);
-  border-radius: 10px;
-  margin: 20px;
-}
-.picAndName{
-  display: flex;
-  align-items: center;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
 }
 
-.postProfilePic{
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, 50%);
+  min-width: 200px;
+  min-height: 300px;
+  right: 57px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  top: 65px;
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--paragraph);
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--postColorHover);
+  color: var(--colordarkText);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#active{
+  background-color: var(--colorText);
+}
+#active i{
+  color: var(--colorMain);
+}
+.post h3,.post p{
+  color: var(--tagColor);
+  padding: 5px;
+  text-align: center;
+}
+.post{
+  display: flex;
+  width: calc(100vw/2.5);
+  margin-top: 30px;
+  background-color: var(--postColor);
+  border-radius: 10px;
+  max-height: 40vh;
+  justify-content: space-around;
+  filter: drop-shadow(0px 0px 10px var(--shadowColor));
+}
+.picName{
+  display: flex;
+  height: 60px;
+}
+.picName h2,.picName p{
+  padding: 5px;
+}
+h2{
+  color: var(--colorText);
+  filter: drop-shadow(2px 2px 0px black);
+}
+p,h3{
+  color: var(--tagColor);
+}
+.picName img{
   width: 50px;
-  padding: 20px;
+  height: 50px;
+  border: 3px solid var(--colorText);
   border-radius: 50%;
+  padding: 2px;
 }
 .postImage{
-  width: 100%;
-}
-.postParagraph{
-  padding: 0px 10px 10px 10px;
-}
-.postSubContent{
-  padding: 10px;
-}
-.likeComShare{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.likeComShare button{
-  background-color: transparent;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 33%;
-  display: flex;
-  border-style: none;
-  border-radius: 5px;
-  padding: 10px;
+  width: 40%;
+  min-width: 150px;
+  object-fit: cover;
+  overflow: hidden;
   margin: 5px;
+}
+.textAfterPic{
+  display: flex;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
-.likeComShare i,.likeComShare span{
-  color: var(--tagColor);
-  padding: 5px;
+.infoContain{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-.likeComShare i{
-  font-size: 25px;
-}
-.likeComShare button:hover{
-  background-color: var(--postColorHover);
-}
-.name ,.phone,.E-mail{
-  background-color: hsla(0, 0%, 0%, 60%);
-  border-radius: 10px;
-  padding: 10px;
+.postParagraph{
+  padding-bottom: 20px;
 }
 .notification button{
   width: 50px;
@@ -382,10 +434,119 @@ display: inline-block;
   border-radius: 50%;
   border-style: none;
   font-size: 28px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   color: var(--colorText);
   background-color: var(--colorBackground);
   cursor: pointer;
+}
+
+
+.title{
+  padding: 0 10px;
+  color: var(--tagColor);
+  letter-spacing: 1px;
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+  .logo{
+      display: none;
+  }
+  .navi{
+      width: 100%;
+  }
+  .submenu1{
+      display: none;
+  }
+  .navi{
+      width: 100%;
+  }
+  .regi{
+      margin: 0 20px;
+  }
+  .list{
+      width: 100%;
+  }
+  .list a{
+      width: 50%;
+  }
+  .profile-pic .-label {
+    height: 130px;
+    width: 130px;
+  }
+  .profile-pic img {
+    width: 130px;
+    height: 130px;
+  }  
+  .post{
+    width: calc(100vw/1.2);
+}
+.post h3{
+  font-size: 1rem;
+}
+.post p{
+  font-size: 13px;
+}
+}
+
+@media(max-width:769px){
+  .logo{
+      display: none;
+  }
+  .navi{
+      width: 100%;
+  }
+  header{
+      display: flex;
+      flex-direction: column;
+  }
+  .submenu1{
+      display: none;
+  }
+  .regi{
+      margin: 0 20px;
+  }
+  .items{
+      flex-direction: column;
+  }
+  .list{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  .list a{
+      width: 70%;
+  }
+  /* .profile-pic{
+    width: 70px;
+    height: 70px;
+  } */
+  .profile-pic .-label {
+    height: 100px;
+    width: 100px;
+  }
+  .profile-pic img {
+    width: 100px;
+    height: 100px;
+  }  
+  .post{
+    width: calc(100vw/1.2);
+}
+  .picName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .picName img{
+    width: 30px;
+    height: 30px;
+  }
+  .post h3{
+    font-size: 12px;
+}
+.post p{
+    font-size: 10px;
+}
 }
