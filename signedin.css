@@ -824,4 +824,10 @@ p,h3{
         width: 30px;
         height: 30px;
       }
+    .textAfterPic h2{
+        font-size: 12px;
+      }
+      .postImage{
+        min-width: 150px;
+      }
 }
