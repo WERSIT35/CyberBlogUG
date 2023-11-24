@@ -549,4 +549,10 @@ p,h3{
 .post p{
     font-size: 10px;
 }
+  .textAfterPic h2{
+        font-size: 12px;
+      }
+      .postImage{
+        min-width: 150px;
+      }
 }
