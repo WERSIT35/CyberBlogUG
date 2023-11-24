@@ -23,8 +23,8 @@
         </div>
         <nav class="navi">
             <ul class="items">
-                <li class="list"><a href="#" class="lnk active">Home</a></li>
-                <li class="list"><a href="#" class="lnk">Categories</a>
+                <li class="list"><a href="signedin.html" class="lnk active"><i class="fa-solid fa-house"></i></a></li>
+                <li class="list"><a href="categories.html" class="lnk"><i class="fa-solid fa-qrcode"></i></a>
                     <ul class="submenu1">
                         <li class="sub crypto"><a href="#">Malware</a>
                             <ul class="subsubmenu">
@@ -82,12 +82,17 @@
                         </li>
                     </ul>
                 </li>
-                <li class="list"><a href="#" class="lnk">News</a></li>
-                <li class="list"><a href="#" class="lnk">About</a></li>
+                <li class="list"><a href="news.html" class="lnk"><i class="fa-solid fa-newspaper"></i></a></li>
+                <li class="list"><a href="about.html" class="lnk"><i class="fa-solid fa-circle-info"></i></a></li>
             </ul>
         </nav>
         <div class="notification">
-            <button href=""><i class="fa-solid fa-bell"></i></button>
+            <button class="dropbtn" onclick="myFunction(event)">
+                <i class="fa-solid fa-bell" onclick="myFunction(event)"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">No notifications to show</a>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -110,43 +115,19 @@
             <div class="tagForPost">
                 <h2>Recently Posted</h2>
             </div>
-            <div class="post I">
-                <div class="picAndName">
-                    <img class="postProfilePic" src="assets/profilepic.jpg" alt="profile picture">
-                    <div class="textAfterPic">
-                        <h2>Roger Nicolson</h2>
-                        <p class="date"><span class="timePassed">3Y</span></p>
+            <div class="post">
+                <div class="infoContain">
+                    <div class="picName">
+                        <img class="postProfilePic" src="assets/profilepic.jpg" alt="profile picture">
+                        <div class="textAfterPic">
+                            <h2>Roger Nicolson</h2>
+                            <p class="date"><span class="timePassed">3Y</span></p>
+                        </div>
                     </div>
+                    <h3 class="title">Guardians of the Digital Realm: Navigating the Complex Landscape of Cybersecurity in the 21st Century</h3>
+                    <p class="postParagraph">In an era defined by interconnectedness and technological advancement, the digital realm stands as a frontier of limitless opportunities and unprecedented challenges.</p>
                 </div>
-                <div class="postContent">
-                    <div class="postSubContent">
-                        <p class="postParagraph">Yo I accidentally hacked someone's website</p>
-                        <img class="postImage" src="assets/proch.jpg" alt="">
-                    </div>
-                </div>
-                <div class="likeComShare">
-                    <button>
-                        <div>
-                            <i class="fa-regular fa-heart"></i>
-                            <!-- <i class="fa-solid fa-heart"></i> -->
-                            <span class="likeNum">150</span>
-                        </div>
-                    </button>
-                    <button>
-                        <div>
-                            <i class="fa-regular fa-comment"></i>
-                            <!-- <i class="fa-solid fa-comment"></i> -->
-                            <span class="comNum">30</span>
-                        </div>
-                    </button>
-                    <button>
-                        <div>
-                            <i class="fa-regular fa-share-from-square"></i>
-                            <!-- <i class="fa-solid fa-share-from-square"></i> -->
-                            <span class="shareNum">5</span>
-                        </div>
-                    </button>
-                </div>
+                <img class="postImage" src="assets/proch.jpg" alt="">
             </div>
         </div>
     </main>
