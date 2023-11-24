@@ -24,8 +24,8 @@
         </div>
         <nav class="navi">
             <ul class="items">
-                <li class="list"><a href="#" class="lnk active">Home</a></li>
-                <li class="list"><a href="#" class="lnk">Categories</a>
+                <li class="list"><a href="signedin.html" class="lnk active"><i class="fa-solid fa-house"></i></a></li>
+                <li class="list"><a href="categories.html" class="lnk"><i class="fa-solid fa-qrcode"></i></a>
                     <ul class="submenu1">
                         <li class="sub crypto"><a href="#">Malware</a>
                             <ul class="subsubmenu">
@@ -83,67 +83,56 @@
                         </li>
                     </ul>
                 </li>
-                <li class="list"><a href="#" class="lnk">News</a></li>
-                <li class="list"><a href="#" class="lnk">About</a></li>
+                <li class="list"><a href="news.html" class="lnk"><i class="fa-solid fa-newspaper"></i></a></li>
+                <li class="list"><a href="about.html" class="lnk"><i class="fa-solid fa-circle-info"></i></a></li>
             </ul>
         </nav>
         <div class="notification">
-            <button href=""><i class="fa-solid fa-bell"></i></button>
+            <button class="dropbtn" onclick="myFunction(event)">
+                <i class="fa-solid fa-bell" onclick="myFunction(event)"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">No notifications to show</a>
+            </div>
         </div>
+        
         <div class="regi">
             <a href="profilepage.html"><img class="profile" src="assets/profilepic.jpg" alt="profile picture"></i></a>
         </div>
     </header>
     <main>
-        <div class="leftSide">
-            <div class="container1">
-                <a href="">Friends</a>
-                <a href="">something</a>
-                <a href="">something</a>
-            </div>
-            <div class="container2">
-                <a href="">Groups</a>
-                <a href="">Favoriets</a>
-                <a href="">Saved</a>
-            </div>
-        </div>
         <div class="create-post">
             <h1>Create Post</h1>
-            <form action="" method="post">
+            <form onsubmit="saveData()">
                 <!-- Post Title -->
                 <div class="posttext">
-                    <input type="text" placeholder="Title:" id="title" name="title" required>
-                    <br>
+                    <input class="titleUpload" type="text" placeholder="Title:" id="title" name="title" required>
                     <!-- Post Content -->
-                    <textarea id="content" placeholder="Content:" name="content" rows="4" required></textarea>
-                    <br>
+                    <textarea class="txtarea" id="content" placeholder="Content:" name="content" rows="4" required></textarea>
+                    <input class="imgUpload" type="file" id="myFile" name="filename">
                     <input type="submit" class="submit" value="Submit">
                 </div>
                 <!-- Submit Button -->
             </form>
         </div>
-        <div class="rightSide">
-            <div class="sponsored">
-                <h2>Sponsored</h2>
-                <div class="sp1">
-                    <img src="assets/prochaproch.jpg" alt="">
-                    <div class="sptext">
-                        <h3>some business</h3>
-                        <p>and marketing text</p>
+            <a href="article.html">
+                <div class="post">
+                    <div class="infoContain">
+                        <div class="picName">
+                            <img class="postProfilePic" src="assets/profilepic.jpg" alt="profile picture">
+                            <div class="textAfterPic">
+                                <h2>Roger Nicolson</h2>
+                                <p class="date"><span class="timePassed">3Y</span></p>
+                            </div>
+                        </div>
+                        <h3 class="title">Guardians of the Digital Realm: Navigating the Complex Landscape of Cybersecurity in the 21st Century</h3>
+                        <p class="postParagraph">In an era defined by interconnectedness and technological advancement, the digital realm stands as a frontier of limitless opportunities and unprecedented challenges.</p>
                     </div>
+                    <img class="postImage" src="assets/proch.jpg" alt="">
                 </div>
-                <hr>
-                <div class="sp2">
-                    <img src="assets/prochproch.jpg" alt="">
-                    <div class="sptext">
-                        <h3>some business</h3>
-                        <p>and marketing text</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </a>
     </main>
     <footer></footer>
-    <script src="index.js"></script>
+    <script src="signedin.js"></script>
 </body>
 </html>
