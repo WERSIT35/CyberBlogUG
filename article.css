@@ -963,6 +963,9 @@ article{
     .text{
         margin: 0 50px;
     }
+    .profileText h2{
+        font-size: 1.5rem;
+    }
 }
 
 @media(max-width:769px){
@@ -995,5 +998,22 @@ article{
     }
     .text{
         margin: 0 25px;
+    }
+    .articleContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+    }
+    .profileText h2{
+        font-size: 1.2rem;
+    }
+    .profileText{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
