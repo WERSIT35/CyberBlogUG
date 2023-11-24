@@ -623,6 +623,15 @@ footer p{
         margin-top: 70%;
         margin-bottom: -60%;
     }
+    .picName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .picName img{
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media(max-width:769px){
@@ -724,4 +733,13 @@ footer p{
     .postt p{
         font-size: 10px;
     }
+    .picName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .picName img{
+    width: 30px;
+    height: 30px;
+  }
 }
