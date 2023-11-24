@@ -45,7 +45,7 @@ header{
     text-decoration: none;
     transition: 0.3s;
     color: var(--colorText);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .items a:hover{
@@ -447,6 +447,12 @@ footer p{
     color: var(--paragraph);
 }
 
+#active{
+    background-color: var(--colorText);
+}
+#active i{
+    color: var(--colorMain);
+}
 @media (min-width:769px) and (max-width:1024px) {
     .logo{
         display: none;
@@ -615,8 +621,5 @@ footer p{
     .bann1{
         width: 90%;
         height: 50%;
-    }
-    .bann1{
-        width: 90%;
     }
 }
