@@ -966,6 +966,18 @@ article{
     .profileText h2{
         font-size: 1.5rem;
     }
+    .content{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .profileText h2{
+        font-size: 10px;
+        height: 100%;
+        margin-right: 20%;
+    }
+    .profileText p{
+        margin-right: 20%;
+    }
 }
 
 @media(max-width:769px){
@@ -1006,8 +1018,17 @@ article{
         height: 100%;
         flex-direction: column;
     }
+    .content{
+        width: 100%;
+        flex-wrap: wrap;
+    }
     .profileText h2{
-        font-size: 1.2rem;
+        font-size: 10px;
+        height: 100%;
+        margin-right: 20%;
+    }
+    .profileText p{
+        margin-right: 20%;
     }
     .profileText{
         position: relative;
