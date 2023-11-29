@@ -497,10 +497,18 @@ p,h3{
   }
   .navi{
       width: 100%;
+      position:fixed;
+      bottom: 0;
+      z-index: 10;
+      background-color: var(--colorBackground);
   }
   header{
       display: flex;
       flex-direction: column;
+  }
+
+   main{
+    margin-bottom: 80px;
   }
   .submenu1{
       display: none;
