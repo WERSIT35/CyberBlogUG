@@ -523,6 +523,9 @@ p,h3{
     width: 70px;
     height: 70px;
   } */
+  .art{
+    flex-direction: column;
+  }
   .profile-pic .-label {
     height: 100px;
     width: 100px;
@@ -543,16 +546,16 @@ p,h3{
     width: 30px;
     height: 30px;
   }
+  .textAfterPic h2{
+        font-size: 12px;
+      }
+.postImage{
+    min-width: 130px;
+  }
   .post h3{
-    font-size: 12px;
+    font-size: 10px;
 }
 .post p{
     font-size: 10px;
 }
-  .textAfterPic h2{
-        font-size: 12px;
-      }
-      .postImage{
-        min-width: 150px;
-      }
 }
