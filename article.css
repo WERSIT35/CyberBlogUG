@@ -1033,6 +1033,7 @@ article{
     .profileText h2{
         font-size: 25px;
         height: 100%;
+        width:100%;
         margin-right: 20%;
     }
     .profileText p{
