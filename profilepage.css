@@ -516,9 +516,7 @@ p,h3{
   .regi{
       margin: 0 20px;
   }
-  .items{
-      flex-direction: column;
-  }
+  
   .list{
       width: 100%;
       display: flex;
