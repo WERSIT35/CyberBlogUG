@@ -991,6 +991,9 @@ article{
       z-index: 10;
       background-color: var(--colorBackground);
   }
+    .cover{
+        height: 300px;
+    }
   main{
     margin-bottom: 80px;
   }
