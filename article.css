@@ -985,8 +985,15 @@ article{
         display: none;
     }
     .navi{
-        width: 100%;
-    }
+      width: 100%;
+      position:fixed;
+      bottom: 0;
+      z-index: 10;
+      background-color: var(--colorBackground);
+  }
+  main{
+    margin-bottom: 80px;
+  }
     header{
         display: flex;
         flex-direction: column;
@@ -997,9 +1004,7 @@ article{
     .regi{
         margin: 0 20px;
     }
-    .items{
-        flex-direction: column;
-    }
+    
     .list{
         width: 100%;
         display: flex;
