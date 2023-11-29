@@ -963,15 +963,12 @@ article{
     .text{
         margin: 0 50px;
     }
-    .profileText h2{
-        font-size: 1.5rem;
-    }
     .content{
         width: 100%;
         flex-wrap: wrap;
     }
     .profileText h2{
-        font-size: 10px;
+        font-size: 15px;
         height: 100%;
         margin-right: 20%;
     }
@@ -1034,7 +1031,7 @@ article{
         flex-wrap: wrap;
     }
     .profileText h2{
-        font-size: 10px;
+        font-size: 15px;
         height: 100%;
         margin-right: 20%;
     }
