@@ -1010,6 +1010,10 @@ article{
         display: flex;
         justify-content: center;
     }
+    footer{
+        margin-top: 350px;
+        margin-bottom:70px;
+    }
     .list a{
         width: 70%;
     }
