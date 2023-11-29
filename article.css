@@ -1041,6 +1041,7 @@ article{
         margin-right: 20%;
     }
     .profileText{
+        height:100%;
         position: relative;
         display: flex;
         justify-content: center;
